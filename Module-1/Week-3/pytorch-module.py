@@ -20,7 +20,6 @@ class CustomSoftmax(nn.Module):
 model_softmax = CustomSoftmax()
 print(model_softmax)
 
-print("========="*10)
 
 # example_input = torch.randn(32, 1)
 # print(example_input)
@@ -32,4 +31,5 @@ print(input1)
 input1 = input1.view(-1, 1)
 print(input1)
 output1 = model_softmax(input1)
-print(round(output1[0].item(), 2))
+print(output1)
+print(output1[0].item())
